@@ -1,0 +1,146 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    color: #1a2740;
+    background: #f5f7fa;
+    padding: 40px 32px;
+}
+
+.page-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2e5c8a;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a2740;
+    margin-bottom: 12px;
+}
+
+.task-desc {
+    font-size: 14.5px;
+    color: #3a4a60;
+    max-width: 760px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+    padding: 28px 32px 32px;
+    max-width: 900px;
+}
+
+.card-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #2e5c8a;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a2740;
+    margin-bottom: 4px;
+}
+
+.card-sub {
+    font-size: 13px;
+    color: #5a6a80;
+    margin-bottom: 22px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #b0bfd0;
+    padding: 10px 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.col-day      { background-color: #dce8f4; }
+.col-morning  { background-color: #dfe9f7; }
+.col-break    { background-color: #fef6d8; }
+.col-afternoon { background-color: #e6f4e6; }
+
+thead th {
+    font-weight: 700;
+}
+
+.time-sub {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    color: #7a6a30;
+}
+
+tbody td {
+    background-color: #fff;
+}
+
+tbody td.col-day {
+    background-color: #dce8f4;
+}
+
+tbody td.col-break {
+    background-color: #fef6d8;
+}
+
+tbody td.day-name {
+    font-weight: 700;
+    background-color: #dce8f4;
+}
+
+.legend {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #3a4a60;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.swatch {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #b0bfd0;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.swatch-day       { background: #dce8f4; }
+.swatch-morning   { background: #dfe9f7; }
+.swatch-break     { background: #fef6d8; }
+.swatch-afternoon { background: #e6f4e6; }
+
+.meta {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #7a8a9a;
+}

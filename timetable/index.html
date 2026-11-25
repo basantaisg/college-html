@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Computer Lab Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="page-label">HTML & CSS / Student Worksheet</p>
+    <h1>Task 2: Weekly computer lab timetable</h1>
+    <p class="task-desc">Build a Monday-to-Friday timetable using the exact subjects, times and room numbers shown. Some lessons occupy two consecutive periods.</p>
+
+    <div class="card">
+        <p class="card-label">HTML Table Practice / Task 02</p>
+        <h2>Weekly computer lab timetable</h2>
+        <p class="card-sub">Recreate the horizontal lesson blocks and the shared vertical break.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="col-day">Day</th>
+                    <th colspan="2" class="col-morning">Morning sessions</th>
+                    <th rowspan="2" class="col-break">
+                        Break
+                        <span class="time-sub">11:00-11:30</span>
+                    </th>
+                    <th colspan="2" class="col-afternoon">Afternoon sessions</th>
+                    <th rowspan="2" class="col-day">Room</th>
+                </tr>
+                <tr>
+                    <th class="col-morning">9:00-10:00</th>
+                    <th class="col-morning">10:00-11:00</th>
+                    <th class="col-afternoon">11:30-12:30</th>
+                    <th class="col-afternoon">12:30-1:30</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="day-name">Monday</td>
+                    <td colspan="2">HTML Lab</td>
+                    <td rowspan="5" class="col-break">Break</td>
+                    <td>CSS</td>
+                    <td>Practice</td>
+                    <td class="col-day">101</td>
+                </tr>
+                <tr>
+                    <td class="day-name">Tuesday</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td colspan="2">Web Project</td>
+                    <td class="col-day">102</td>
+                </tr>
+                <tr>
+                    <td class="day-name">Wednesday</td>
+                    <td colspan="2">Table Workshop</td>
+                    <td>Review</td>
+                    <td>Quiz</td>
+                    <td class="col-day">101</td>
+                </tr>
+                <tr>
+                    <td class="day-name">Thursday</td>
+                    <td>JavaScript</td>
+                    <td>Practice</td>
+                    <td colspan="2">Group Project</td>
+                    <td class="col-day">102</td>
+                </tr>
+                <tr>
+                    <td class="day-name">Friday</td>
+                    <td>Revision</td>
+                    <td>Test</td>
+                    <td>Presentation</td>
+                    <td>Feedback</td>
+                    <td class="col-day">101</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="swatch swatch-day"></span> Day / Room
+            </div>
+            <div class="legend-item">
+                <span class="swatch swatch-morning"></span> Morning
+            </div>
+            <div class="legend-item">
+                <span class="swatch swatch-break"></span> Break
+            </div>
+            <div class="legend-item">
+                <span class="swatch swatch-afternoon"></span> Afternoon
+            </div>
+        </div>
+
+        <p class="meta">7 columns | 2 header rows | 5 day rows | Times run from 9:00 a.m. to 1:30 p.m.</p>
+    </div>
+
+</body>
+</html>
