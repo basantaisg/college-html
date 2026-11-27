@@ -53,8 +53,6 @@ body {
 
 /* Ordered List */
 .todo-list {
-  list-style-type: lower-alpha;
-  list-style-position: inside;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
